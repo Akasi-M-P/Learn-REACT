@@ -24,6 +24,7 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
 .movie img {
@@ -57,14 +58,33 @@ body {
   letter-spacing: 2px;
 }
 
+.movie p {
+  margin: 1rem 0 0.5rem;
+}
+
+.number {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background: rgb(4, 6, 37);
+  color: #fff;
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
+
 @media screen and (min-width: 768px) {
   .movielist {
     grid-template-columns: repeat(3, 1fr);
 
     align-items: start;
   }
-}
-
-.movie p {
-  margin: 1rem 0 0.5rem;
 }
